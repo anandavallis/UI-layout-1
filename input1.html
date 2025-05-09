@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Box Value </title>
+</head>
+<body>
+    <input type="text" id="userInput" placeholder="InputValue">
+    <button id = "submitButton">Get The Input Value</button>
+
+    <script>
+        const submitButton = document.getElementById("submitButton");
+        const userInput = document.getElementById("userInput");
+
+         submitButton.addEventListener('click' , function(){
+            const inputValue = userInput.value; 
+            console.log("Input value :",  inputValue);
+
+            
+         });
+
+    </script>
+
+</body>
+</html>
