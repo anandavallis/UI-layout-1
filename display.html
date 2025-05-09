@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Box Value Display P Tag .</title>
+</head>
+<body>
+    <h1>Input Box Value Display P Tag .</h1>
+
+   <input type="text" id="userInput" placeholder="InputValue">
+   <button id="displayButton">Display Button</button>
+
+   <p id="outputParagraph">The Input Value Will Appear here.</p>
+
+   <script>
+    const userInput = document.getElementById("userInput");
+    const displayButton = document.getElementById("displayButton");
+    const outputParagraph = document.getElementById("outputParagraph");
+
+    displayButton.addEventListener('click',function(){
+
+        const inputValue = userInput.value;
+
+        outputParagraph.innerHTML = inputValue;
+
+    })
+   </script>
+
+</body>
+</html>
