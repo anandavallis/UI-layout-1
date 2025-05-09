@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Onchange</title>
+</head>
+<body>
+    <h1>OnChange Event</h1>
+
+    <input type="text" id="userInput" placeholder="inputValue">
+    <p id="outputParagraph">Type in the input box and press Enter to see the value here.</p>
+    
+    <script>
+        const userInput = document.getElementById("userInput");
+        const outputParagraph = document.getElementById("outputParagraph");
+
+        userInput.addEventListener("click", function(){
+
+            const inputValue = userInput.value;
+            outputParagraph.innerHTML = 'Input Changed :' + inputValue;
+
+            console.log("Input Changed :" , inputValue);
+        });
+
+    </script>
+</body>
+</html> 
