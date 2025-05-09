@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouse Enter and Leave Event</title>
+</head>
+<body>
+    <h2>Mouse Enter and Leave Event</h2>
+   <div id="mouseDiv">Hover Over me!</div>
+
+    <script>
+    const mouseDiv = document.getElementById('mouseDiv');
+    mouseDiv.addEventListener("mouseenter", () => {
+        mouseDiv.textContent = "Mouse Enter";
+        console.log("Mouse Enter!");
+    });
+
+    mouseDiv.addEventListener("mouseleave", () => {
+        mouseDiv.textContent = "Mouse Left!";
+        console.log("Mouse Left!");
+    });
+    
+</script>
+</body>
+</html>
