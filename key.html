@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Key Pressed</title>
+</head>
+<body>
+    <h1>Press & Release Any Key</h1>
+
+  <div id="log">Waiting for key event...</div>
+
+  <script>
+    // Reference to the display area
+    const logElement = document.getElementById('log');
+
+    // Handler when a key is pressed down
+    document.addEventListener('keydown', () => {
+
+      logElement.textContent = "Key pressed!";
+      console.log("Key pressed!");
+    });
+
+    // Handler when a key is released
+    document.addEventListener('keyup', () => {
+
+      logElement.textContent = "Key released!";
+      console.log("Key released!");
+    });
+
+  </script>
+</body>
+</html>
